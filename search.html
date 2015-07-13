@@ -1,0 +1,32 @@
+---
+layout: page
+title: search
+header: Posts By Tag
+---
+{% include JB/setup %}
+<div class="loading" id="js-loading"></div>
+<h3 id="total"></h3>
+<ul id="result"></ul>
+<script type="text/javascript">
+    var posts = [0
+    {% for post in site.posts %}
+        ,{"t":"{{ post.title }}", "l":"{{ site.production_url }}{{ post.url }}"}
+    {% endfor %}
+    ];
+
+    ~function searchPost(r) {
+        var word = decodeURI(location.href.split('?')[1]).toLowerCase();
+        var len = r.length,
+                i = 1,
+                ret = [];
+        if (word) {
+            while (i < len) {
+                r[i].t.toLowerCase().indexOf(word) >= 0 && ret.push('<li><a href="' + r[i].l + '">' + r[i].t + '</a></li>');
+                i++;
+            }
+        }
+        doc.getElementById('js-loading').style.display = 'none';
+        doc.getElementById('total').innerHTML = ret.length + '条和“'+word+'”相关的搜索结果。';
+        doc.getElementById('result').innerHTML = ret.join('');
+    }(posts);
+</script>

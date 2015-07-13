@@ -1,0 +1,44 @@
+<div class="page-header">
+    <h2>{{ page.title }}</h2>
+</div>
+
+<div class="">
+    <div class="">
+        {{ content }}
+        <hr>
+        <div class="pagination">
+            <ul>
+                {% if page.next %}
+                <li class="prev"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">&larr; Previous</a></li>
+                {% else %}
+                <li class="prev disabled"><a>&larr; Previous</a></li>
+                {% endif %}
+
+
+                <li><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Archive</a></li>
+
+
+                {% if page.previous %}
+                <li class="next"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">Next &rarr;</a></li>
+                {% else %}
+                <li class="next disabled"><a>Next &rarr;</a></li>
+                {% endif %}
+            </ul>
+        </div>
+        <hr>
+        {% include JB/comments %}
+
+    </div>
+
+    <div class="">
+        {% unless page.tags == empty %}
+        <ul class="tag_box inline">
+            <li style="color: #404040;line-height: 33px;">相关标签：</li>
+            {% assign tags_list = page.tags %}
+            {% include JB/tags_list %}
+        </ul>
+        {% endunless %}
+        <div class="date">最后更新： <span>{{ page.date |  date: "%Y-%m-%d %H:%M" }}</span></div>
+    </div>
+
+</div>

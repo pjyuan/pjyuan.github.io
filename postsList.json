@@ -1,0 +1,9 @@
+---
+# 获取所有文章标题和链接
+layout: nil
+---
+[0
+{% for post in site.posts %}
+,{"t":"{{ post.title }}", "l":"{{ site.production_url }}{{ post.url }}"}
+{% endfor %}
+]
