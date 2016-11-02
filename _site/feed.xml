@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://localhost:4000/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2016-11-02T14:20:54+08:00</updated><id>http://localhost:4000//</id><title type="html">pjyuan</title><subtitle></subtitle><entry><title type="html">Welcome to Pjyuan’s blog!</title><link href="http://localhost:4000/2016/11/01/welcome-to-pjyuan.html" rel="alternate" type="text/html" title="Welcome to Pjyuan's blog!" /><published>2016-11-01T20:59:26+08:00</published><updated>2016-11-01T20:59:26+08:00</updated><id>http://localhost:4000/2016/11/01/welcome-to-pjyuan</id><content type="html" xml:base="http://localhost:4000/2016/11/01/welcome-to-pjyuan.html">&lt;h3 id=&quot;hello&quot;&gt;Hello!&lt;/h3&gt;
+
+&lt;h3 id=&quot;section&quot;&gt;关于此博客的一些内容&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;leetcode相关题目&lt;/li&gt;
+  &lt;li&gt;机器学习相关总结&lt;/li&gt;
+  &lt;li&gt;源码分析&lt;/li&gt;
+  &lt;li&gt;一些公开课的内容&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/pjyuan.jpg&quot; alt=&quot;pjyuan&quot; width=&quot;300px&quot; height=&quot;213px&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;section-1&quot;&gt;参考资料&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;http://blog.fens.me/jekyll-bootstarp-github/&lt;/li&gt;
+&lt;/ul&gt;</content><summary type="html">Hello!</summary></entry></feed>
